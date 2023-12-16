@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Permanent+Marker&family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000029;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu-toggle {
+    display: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+nav.active .menu-toggle {
+    color: white;
+}
+
+.home {
+    height: 25px;
+    width: auto;
+    background-color: white;
+    border-radius: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border: 0px solid white;
+    box-shadow: 0px 0px 10px 0.85px rgba(255, 255, 255, 0.5);
+    display: none;
+    z-index: 1;
+    position: absolute;
+    font-weight: bold;
+}
+
+nav {
+    background-color: rgb(18, 18, 65);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 1;
+    transform: none;
+    backdrop-filter: blur(2rem);
+    z-index: 100;
+    height: 5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    font-size: 1.01rem;
+    color: rgb(236, 231, 231);
+}
+
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 100px 84px;
+}
+
+.left {
+    font-size: 2.5rem;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px 0;
+}
+
+.firstSection>div {
+    width: 100%;
+    text-align: center;
+}
+
+.leftSection {
+    font-size: 1.8rem;
+}
+
+.leftSection .btn {
+    height: 2rem;
+    width: 10rem;
+    border-radius: 5px;
+    border: 0px solid black;
+    font-size: 0.8rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.leftSection .btn a {
+    color: rgb(125, 36, 204);
+    text-decoration: none;
+}
+
+.leftSection .btn:hover {
+    box-shadow: none
+}
+
+.rightSection img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.purple {
+    color: rgb(170, 107, 225);
+}
+
+.text-grey {
+    color: grey;
+}
+
+#element {
+    color: rgb(170, 107, 225);
+}
+
+#about img {
+    height: 35rem;
+    width: 35rem;
+    margin-top: 3%;
+}
+
+#about {
+    padding: 100px 0;
+    color: aliceblue;
+}
+
+.about-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row-2 {
+    flex-basis: 55%;
+}
+
+.row-2 p {
+    padding-top: 5%;
+    padding-left: 10%;
+    opacity: 0.5;
+    transform: none;
+}
+
+.about-content i {
+    color: #bd699b;
+}
+
+.about-content ul li {
+    list-style: none;
+    padding-top: 2rem;
+    margin-left: 5rem;
+}
+
+.about-content ul li a {
+    padding-left: 1rem;
+}
+
+.about-content button {
+    height: 2rem;
+    width: 10rem;
+    border-radius: 5px;
+    border: 0px solid black;
+    font-size: 1rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.about-content button a {
+    color: rgb(125, 36, 204);
+    text-decoration: none;
+}
+
+.about-content button:hover {
+    box-shadow: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    font-size: 4rem;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        background-color: rgb(18, 18, 65);
+        flex-direction: column;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .firstSection>div {
+        width: 100%;
+    }
+
+    .leftSection .btn {
+        margin: 1rem 0;
+    }
+}
