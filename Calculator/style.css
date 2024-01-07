@@ -6,11 +6,10 @@ body {
     width: 100%;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-color: #1c1c1c;
+    background-color: #333;
 }
 
 .container {
-    background-color: #333;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -25,9 +24,15 @@ body {
     cursor: pointer;
     font-size: 18px;
     box-sizing: border-box;
+    color: whitesmoke;
+    background-color: #3d424a;
 }
 
-.button:hover {
+.operator:hover {
+    background-color: #647b86;
+}
+
+.num:hover {
     background-color: #555;
 }
 
@@ -43,7 +48,7 @@ body {
     padding: 10px 0px;
     border: 2px solid black;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #73758a;
     text-align: left;
     outline: none;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
@@ -51,31 +56,21 @@ body {
 
 .text-center {
     text-align: center;
+    color: #abadb9;
 }
 
 .operator {
-    background-color: #f79646;
+    background-color: #0e324f;
     color: #fff;
 }
 
 .equal {
-    background-color: #4caf50;
+    background-color: #155d96;
     color: #fff;
 }
 
-.percentage {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.ac {
-    background-color: #dc3545;
-    color: #fff;
-}
-
-.memory {
-    background-color: #17a2b8;
-    color: #fff;
+.equal:hover {
+    background-color: #0989f1;
 }
 
 .backspace {
@@ -87,20 +82,16 @@ body {
     border-radius: 9px;
     cursor: pointer;
     font-size: 18px;
-    background-color: #dc3545;
-    color: #fff;
     box-sizing: border-box;
 }
 
-.dot {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.dot:hover {
-    background-color: #0056b3;
-}
-
- .button span{
+.button span {
     line-height: 0.1;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
